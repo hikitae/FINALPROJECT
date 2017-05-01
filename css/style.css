@@ -1,3 +1,13 @@
+/* /////  QUESTIONS  ////// */
+/*--would like to fix the header & footer 
+--  MainImage ; fade in / out 
+--  Twitter/ facebook ; would like to make color white before clicking..
+-- about ; there is a slight gap at the bottom.. why?
+--- how to make dropdown menu on nav
+*/
+
+
+
 /* ------------------------------- 
 ------------ SET UP --------------
 -----------------------------------*/
@@ -14,7 +24,10 @@ a {
 }
 
 #container {
- font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Lora', serif;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .backgroundcolor {
@@ -22,7 +35,15 @@ a {
 }
 
 .backgroundcolor2 {
-	background-color: #656565 ;
+	background-color: #E0E0E0;
+}
+
+.backgroundcolor3 {
+	background-color: #6F6F6F;
+}
+
+.backgroundcolor4 {
+	background-color: #3C3C3C;
 }
 
 /* ------------------------------- 
@@ -31,6 +52,7 @@ a {
 
 body {
 	height: 100%;
+	width: 100%;
 }
 
 /*#container {
@@ -40,7 +62,6 @@ body {
 
 header {
 	height: 80px;
-
 }
 
 #mainimage, #gallery {
@@ -48,31 +69,34 @@ header {
 /*	width: 100%;*/
 }
 
-#about, #features, #contact {
+#features {
+	height: 550px;
+}
+
+#about, #contact {
 	height: 400px;
 }
 
 footer {
-	height: 200px;
+	height: 250px;
 }
+
 
 
 /* ------------------------------- 
 ------------ ADDITIONAL STYLES----
 -----------------------------------*/
 
-/* ------HEADER------------------*/
+/* ---------  /////  HEADER ///// ---------------*/
 
 header {
   /*  position: fixed;
     top: 0px;*/
 }
 
-
-
-#page-wrap {
-	margin: 0 auto;
-    max-width: 1200px;
+#page-wrapper {
+	margin: auto;
+    max-width: 80%;
     position: relative;
     height: 50%;
     top: 50%;
@@ -87,47 +111,45 @@ header img {
 	width: -80%;
 }
 
-nav  {
+#page-wrapper nav  {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	right: 0
-
+	right: 0;
 }
 
-nav ul li {
+#page-wrapper nav ul li {
 	display: inline-block;
 	margin-left: 20px;
 }
 
-nav ul li a {
-	color: #FFFFFF;
-
+#page-wrapper nav ul li a, #footer-two nav ul li a, #footer-wrapper nav ul li a {
+	color: #F4F7F6;
+	font-family: 'Roboto', sans-serif;
 }
 
-nav ul li a:hover, nav ul li a:active {
+#page-wrapper nav ul li a:hover, #page-wrapper nav ul li a:active, #footer-two ul li a:hover, #footer-two ul li a:active, #footer-three a:hover, #footer-three a:active {
 	color: #6CB670;
 }
 
 
-/* ------MAIN IMAGE------------------*/
+/* --------  /////   MAIN IMAGE /////------------------*/
 
 #slide1 {
   background-image: url('../images/slide_1.jpg');
 }
 
 #slide2 {
-  background-image: url('../images/slide_2.jpg');
+  background-image: url('../images/slide_2.png');
 }
 
 #slide3 {
-  background-image: url('../images/slide_3.jpg');
+  background-image: url('../images/slide_3.png');
 }
 
 #mainimage {
 	white-space: nowrap;
 	overflow: hidden;
-
 }
 
 .slide-image {
@@ -137,18 +159,22 @@ nav ul li a:hover, nav ul li a:active {
   background-size: cover;
   display: inline-block;
   text-align: center;
- 
+  overflow: hidden;
 }
+
 .slidetext {
-	font-size: 400%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 450%;
 	font-weight: 700;
 	color: #FFFFFF;
 	position: relative;
-	top: 50%;
-
+	top: 70%;
 }
 
-/* ------ABOUT----------------*/
+/* ------ //////   ABOUT   //////// ----------------*/
+.color-green {
+	color: #6CB670;
+}
 
 .row {
 	/*width: 1024px;*/
@@ -169,21 +195,21 @@ h2 {
 	display: block;
 	font-size: 200%;
 	color: #FFFFFF;
-	font-weight: 400;
-	/*font-family: oswald;*/
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .border {
-	border-top: 1px solid #FFFFFF;
+	border-top: 1px solid #6CB670;
     height: 1px;
     margin: 15px auto 0;
     position: relative;
-    width: 35%;
+    width: 25%;
 }
 
 .border:before {
-    background-color: #FFFFFF;
-    border: 1px ridge #FFFFFF;
+    background-color: #6CB670;
+    border: 1px ridge #6CB670;
     content: "";
     height: 10px;
     left: 50%;
@@ -193,23 +219,155 @@ h2 {
     width: 40px;
 }
 
-/* ------FEATURES----------------*/
-#featuresgreen {
-	color: #6CB670;
+#about-wrapper {
+	width: 70%;
+	height: 70%;
+	margin: 0 auto;
+	padding-bottom: 60px;
+}
+
+#about-wrapper h4 {
+	height: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 180%;
+	font-size: 130%;
 }
 
 
-/* ------GALLERY----------------*/
+
+/* ------ //////  FEATURES  /////// ----------------*/
+#features .row {
+	padding-top: 40px;
+}
+
+#featureWrapper {
+	width: 80%;
+	height: 75%;
+	margin: 0 auto;
+	padding-bottom: 60px;
+	/*font-size: 0;*/
+}
+
+.featureContents {
+	width: 30%;
+	height: 100%;
+	border:1px solid white;
+	display: inline-block;
+	background-color: #DDDDDD;
+}
+
+.feature-icon {
+	height: 70px;
+	margin-top: 20px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.feature-block {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#featureOne, #featureTwo{
+	margin-right: 5%;
+	float: left;
+}
+
+#featureThree {
+	float: right;
+	margin-right: 0;
+}
+
+.feature-block h3 {
+	font-weight: 600;
+	font-size: 160%;
+	font-family: 'Lora', serif;
+	margin: 20px auto 10px;
+}
+
+.feature-block h4 {
+	font-weight: 400;
+	font-size: 130%;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 130%;
+	padding-top: 5px;
+} 
+
+#featureThree h4 {
+	line-height: 180%;
+}
+
+
+/* ------ //////  GALLERY ////// ----------------*/
 #gallerygreen {
 	color: #6CB670;
 }
 
+#gallery .row {
+	padding-top: 40px;
+}
 
+/* ------ //////  CONTACT  //////  ----------------*/
 
+#contact {
+	background-color: #E0E0E0;
+}
 
-/* ------FOOTER-----------------*/
-footer {
-	background-color: #2B2C30
+/* ------ ///////  FOOTER ///////  -----------------*/
+
+#footer-wrapper {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 3%;
+}
+
+.footer-contents {
+	width: 30%;
+	height: 85%;
+	display: inline-block;
+	overflow: hidden;
+}
+
+#footer-one {
+	margin-right: 5%;
+	float: left;
+}
+
+#footer-two {
+	float: left;
+}
+
+#footer-wrapper nav ul li a {
+	color: #F4F7F6;
+	font-family: 'Roboto', sans-serif;
+	line-height: 160%;
+	font-size: 110%;
+}
+
+#footer-three {
+	float: right;
+	margin-right: 0;
+}
+
+.footer-contents img {
+	display: inline-block;
+}
+
+.brand-icon {
+	display: inline-block;
+	color: #F4F7F6;
+	padding-right: 5%;
+}
+
+#footer-three, #footer-one, #footer-two{
+	text-align: center;
+}
+
+.brand-icon, #footer-one img {
+	padding-top: 10%;
 }
 
 

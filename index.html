@@ -3,94 +3,166 @@
 <head>
 	<title>LookVR | Home </title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,400i,600,600i,700|Oswald:400,500,600,700" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,400i,600,600i,700|Oswald:400,500,600,700|Roboto+Slab:400,700" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,500,700|Source+Sans+Pro:400,600,700|Montserrat:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-  <script src="js/jquery-3.2.0.js"></script>
-  <script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/jquery-3.2.0.js"></script>
+	<script src="js/script.js"></script>
 </head>
 
 <body>
-
 <div id="container">
+<!-- /////  HEADER  //////  -->
 
-
-<header class="backgroundcolor">
-	<div id="page-wrap">
-	<h1><img src="images/lookvr.png" alt="LookVR Logo"></h1>
-	<nav>
-		<ul>
-			<li><a href="">About</a></li>
-			<li><a href="">Features</a></li>
-			<li><a href="">Gallery</a></li>
-			<li><a href="">Support</a></li>
-			<li><a href="">Contact</a></li>
-		</ul>  
-	</nav>
+<header class="backgroundcolor" id="top-page">
+	<div id="page-wrapper">
+		<a href="#top-page"><img src="images/lookvr.png" alt="LookVR Logo"></a>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>  
+		</nav>
 	</div>
 </header>
 
+<!-- //////  Main Image  ///// -->
 
 <section id="mainimage">
+<!-- 	<img src="images/arrow_left.svg" alt="Left Carousel Arrow" class="arrow" id="left-arrow">
+    <img src="images/arrow_right.svg" alt="Right Carousel Arrow" class="arrow" id="right-arrow"> -->
   	<div class="slide-image" id="slide1">
   		<h1 class="slidetext">REALTIME VIDEO STITCHING</h1>
   	</div>
-    <!-- <div class="slide-image" id="slide2"></div>
-    <div class="slide-image" id="slide3"></div> -->
+    <div class="slide-image" id="slide2">
+    	<h1 class="slidetext">YouTube 360 &amp; Facebook 360 STREAMING SUPPORT</h1>
+    </div>
+    <div class="slide-image" id="slide3">
+    	<h1 class="slidetext">HIGH FRAME RATES</h1>
+    	<h3 class="slidetext2">High Resolution</h3>
+    </div>
 </section>
+
+<!-- /////  ABOUT ////// -->
 
 <section id="about" class="backgroundcolor2">
 	<div class="row">
 		<div class="section-title">
-			<h2>ABOUT</h2>
+			<h2 class="color-green">ABOUT</h2>
+				<div class="border"></div>
+		</div>
+	</div>
+	<div id="about-wrapper">
+		<h4><p>LookVR is a a complete 2D &amp; 3D 360 capture/stitching/streaming software using state-of-the-art computational vision algorithms and GPU processing to deliver high frame rate and high resolution panoramic video. LookVR also features a modern UI designed with ease of use and on-set preview in mind which can deliver content to various platforms like Oculus CV-1,  HTC-Vive, YouTube 360, Facebook 360 and other CDNs. It also can stream and process multi channel audio for use for 3D spatial sound.</br>
+		Various camera rigs can be configured and calibrated on the fly in addition to pre-built rig templates for popular 360 rigs in various configurations like Blackmagic,  Nokia-OZO, Freedom-360 rigs.</p>
+		</h4>
+	</div>
+</section>
+
+<!-- //////  FEATURES //////-->
+
+<section id="features" class="backgroundcolor3">
+	<div class="row">
+		<div class="section-title">
+			<h2>OUR  <span class="color-green">FEATURES</span></h2>
+				<div class="border"></div>
+		</div>
+	</div>
+
+	<div id="featureWrapper">
+<!-- FEATURE ONE -->
+		<article class="featureContents" id="featureOne">
+			<div class="feature-block text-center">
+				<div class="feature-icon">
+					<i class="fa fa-film fa-4x"></i>
+				</div>
+				<h3>Designed for Production</h3>
+				<h4>With feedback from several studios and after exhaustive testing on and off set, LookVR is designed with the demands of an On Set Production Environment</h4>
+			</div>
+		</article>
+<!-- FEATURE TWO -->
+		<article class="featureContents" id="featureTwo">
+				<div class="feature-block text-center">
+					<div class="feature-icon text-center">
+						<i class="fa fa-forward fa-4x"></i>
+					</div>
+					<h3>Interactive &amp; Fast </h3>
+					<h4>Designed with Live Streaming and Latency in mind and ability to control blends on Interactivity with On Set DIT/VTR with ability to Playback and Output to Dailies Immediately</h4>
+				</div>
+		</article>
+<!-- FEATURE THREE -->		
+		<article class="featureContents" id="featureThree">
+				<div class="feature-block text-center">
+					<div class="feature-icon text-center">
+						<i class="fa fa-eye fa-4x"></i>
+					</div>
+					<h3>Modern UI Design</h3>
+					<h4>Designed with a modern UI look</h4>
+					<h4>Flat Theme</h4>
+					<h4>Comfortable User Experience</h4>
+				</div>
+		</article>
+	</div>
+</section>
+
+<!-- //////  GALLERY //////-->
+
+<section id="gallery" class="backgroundcolor4">
+	<div class="row">
+		<div class="section-title">
+			<h2 class="color-green">GALLERY</h2>
 				<div class="border"></div>
 		</div>
 	</div>
 </section>
 
-<section id="features" class="backgroundcolor2">
-	<div class="row">
-		<div class="section-title">
-			<h2>OUR  <span id="featuresgreen">FEATURES</span></h2>
-				<div class="border"></div>
-		</div>
-	</div>
-</section>
-
-<section id="gallery" class="backgroundcolor2">
-	<div class="row">
-		<div class="section-title">
-			<h2 id="gallerygreen">GALLERY</h2>
-				<div class="border"></div>
-		</div>
-	</div>
-</section>
+<!-- //////  CONTACT //////-->
 
 <section id="contact">Contact</section>
 
-<footer class="backgroundcolor">Footer
+<!-- //////  FOOTER  //////-->
 
+<footer class="backgroundcolor">
+	<div id="footer-wrapper">
+<!-- FOOTER ONE  -->	
+		<article class="footer-contents" id="footer-one">
+			<a href=""><img src="images/lookvr.png" alt="LookVR Logo"></a>
+		</article>
+<!-- FOOTER TWO  -->
+		<article class="footer-contents" id="footer-two">
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>  
+			</nav>
+		</article>
+<!-- FOOTER THREE -->
+		<article class="footer-contents" id="footer-three">
+			<div class="brand-icon">
+					<a href=""><i class="fa fa-twitter-square fa-3x"></i></a>
+			</div>
+			<div class="brand-icon">
+					<a href=""><i class="fa fa-facebook-square fa-3x"></i></a>
+			</div>
+			<div class="brand-icon">
+					<a href=""><i class="fa fa-linkedin-square fa-3x"></i></a>
+			</div>
+		</article>
+	</div>
 </footer>
 
 </div>
-
-
-
-
 
 </body>
 
 
 
 
-
-
-<!-- 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif; -->
-
-
-<!-- 	<ul id="gallery">
-			<li><img src="images/top_main01.png" alt="We are PIXEL Fine.We are designing, developing and planning many awesome applications for the next generation." width="960" height="320"></li>
-			<li><img src="images/top_main02.png" alt="PIXEL Fine CONCIERGE/It’s an application that supports your life like a private &quot;concierge&quot;./スケジュール管理情報サービスアプリケーション" width="960" height="320"></li>
-			<li><img src="images/top_main03.png" alt="PIXEL Fine NAVI S/スマートフォン用ナビゲーションアプリ" width="960" height="320"></li>
-		</ul> -->
