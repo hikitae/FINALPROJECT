@@ -162,7 +162,7 @@ header img {
   overflow: hidden;
 }
 
-.slidetext {
+.slidetext1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 450%;
 	font-weight: 700;
@@ -170,6 +170,29 @@ header img {
 	position: relative;
 	top: 70%;
 }
+
+.slidetext2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 360%;
+	font-weight: 700;
+	line-height: 120%;
+	color: #FFFFFF;
+	position: relative;
+	top: 65%;
+	left: 15%;
+}
+
+.slidetext3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 300%;
+	font-weight: 700;
+	color: #FFFFFF;
+	position: relative;
+	top: 72%;
+}
+
+
+
 
 /* ------ //////   ABOUT   //////// ----------------*/
 .color-green {
