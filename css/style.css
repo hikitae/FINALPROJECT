@@ -1,8 +1,7 @@
 /* /////  QUESTIONS  ////// */
-/*--would like to fix the header & footer 
+/*
 --  MainImage ; fade in / out 
 --  Twitter/ facebook ; would like to make color white before clicking..
--- about ; there is a slight gap at the bottom.. why?
 --- how to make dropdown menu on nav
 */
 
@@ -35,7 +34,7 @@ a {
 }
 
 .backgroundcolor2 {
-	background-color: #E0E0E0;
+	background-color: #EDEDED
 }
 
 .backgroundcolor3 {
@@ -90,8 +89,10 @@ footer {
 /* ---------  /////  HEADER ///// ---------------*/
 
 header {
-  /*  position: fixed;
-    top: 0px;*/
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
 }
 
 #page-wrapper {
@@ -148,6 +149,7 @@ header img {
 }
 
 #mainimage {
+	position: relative;
 	white-space: nowrap;
 	overflow: hidden;
 }
