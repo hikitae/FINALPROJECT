@@ -27,6 +27,7 @@ a {
 	font-family: 'Lora', serif;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-family: 'Montserrat', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .backgroundcolor {
@@ -63,17 +64,21 @@ header {
 	height: 80px;
 }
 
-#mainimage, #gallery {
+#mainimage {
 	height: 600px;
 /*	width: 100%;*/
 }
+
+ #gallery {
+ 	height: 100%;
+ }
 
 #features {
 	height: 550px;
 }
 
 #about, #contact {
-	height: 400px;
+	height: 100%;
 }
 
 footer {
@@ -89,10 +94,10 @@ footer {
 /* ---------  /////  HEADER ///// ---------------*/
 
 header {
-    position: fixed;
-    top: 0px;
+   /* position: fixed;*/
+   /* top: 0px;*/
     width: 100%;
-    z-index: 10;
+   /* z-index: 10;*/
 }
 
 #page-wrapper {
@@ -126,7 +131,8 @@ header img {
 
 #page-wrapper nav ul li a, #footer-two nav ul li a, #footer-wrapper nav ul li a {
 	color: #F4F7F6;
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Ubuntu', sans-serif;
 }
 
 #page-wrapper nav ul li a:hover, #page-wrapper nav ul li a:active, #footer-two ul li a:hover, #footer-two ul li a:active, #footer-three a:hover, #footer-three a:active {
@@ -193,7 +199,36 @@ header img {
 	top: 72%;
 }
 
+/* --------  /////   MAIN IMAGE - ARROWs /////------------------*/
+.arrow {
+  width: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 
+#right-arrow {
+  right: 20px;
+}
+
+#left-arrow {
+  left: 20px;
+}
+
+/* --------  /////   MAIN IMAGE - ARROWs ; Responsive /////------------------*/
+@media (max-width: 768px) {
+  .arrow {
+    width: 10%;
+  }
+}
+
+/* i dont know why i need this ---> */
+/*@media (max-device-width: 1024px) {
+  .arrow {
+    width: 20%;
+  }
+}*/
 
 
 /* ------ //////   ABOUT   //////// ----------------*/
@@ -222,6 +257,8 @@ h2 {
 	color: #FFFFFF;
 	font-weight: 700;
 	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Ubuntu', sans-serif;*/
+
 }
 
 .border {
@@ -245,8 +282,8 @@ h2 {
 }
 
 #about-wrapper {
-	width: 70%;
-	height: 70%;
+	width: 80%;
+	/*height: 70%;*/
 	margin: 0 auto;
 	padding-bottom: 60px;
 }
@@ -254,6 +291,7 @@ h2 {
 #about-wrapper h4 {
 	height: 100%;
 	font-family: 'Source Sans Pro', sans-serif;
+	/*font-family: 'Ubuntu', sans-serif;*/
 	line-height: 180%;
 	font-size: 130%;
 }
@@ -306,9 +344,11 @@ h2 {
 }
 
 .feature-block h3 {
-	font-weight: 600;
+	/*font-weight: 600;*/
+	font-weight: 500;
 	font-size: 160%;
-	font-family: 'Lora', serif;
+	/*font-family: 'Lora', serif;*/
+	font-family: 'Ubuntu', sans-serif;
 	margin: 20px auto 10px;
 }
 
@@ -316,7 +356,8 @@ h2 {
 	font-weight: 400;
 	font-size: 130%;
 	font-family: 'Source Sans Pro', sans-serif;
-	line-height: 130%;
+	/*font-family: 'Ubuntu', sans-serif;*/
+	line-height: 140%;
 	padding-top: 5px;
 } 
 
@@ -326,21 +367,201 @@ h2 {
 
 
 /* ------ //////  GALLERY ////// ----------------*/
+#gallery {
+	padding-top: 40px;
+}
 #gallerygreen {
 	color: #6CB670;
 }
 
-#gallery .row {
-	padding-top: 40px;
+
+#gallery-wrapper {
+	width: 80%;
+	margin:0 auto;
+/*	height: 100%;*/
+	overflow: hidden;
+	padding-bottom: 60px;
+	
 }
+
+.gallery-block {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+
+#gallery-image {
+	background-color: lightblue;
+}
+
+#gallery-text {
+	background-color: lightpink;
+}
+
+/*<!-- ///////
+		//////////////MODAL -->*/
+
+
+/* The Modal (background) */
+/*#myBtn {
+	width: 70%;
+	height: 50%;
+}*/
+
+#btn-wrapper img {
+	width: 70%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: yellow;
+    margin: auto;
+ /*   padding: 20px;*/
+ /*   border: 1px solid #888;*/
+    width: 60%;
+    height: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-25%);
+    left:50%;
+    transform: translateX(-50%);
+
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 
 /* ------ //////  CONTACT  //////  ----------------*/
 
 #contact {
 	background-color: #E0E0E0;
+	font-family: 'Ubuntu', sans-serif;
+	overflow: hidden;
+	clear: both;
+	padding-top: 40px;
 }
 
+#contact-wrapper {
+	width: 70%;
+	/*height: 100%;*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.contact-block {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	padding: 0 0 60px 0px;
+}
+
+#block-left h3 {
+	font-size:140%;
+	font-weight: 500;
+	color: black;
+}
+
+#block-left h3+h4 {
+	margin-top: 10px;
+}
+
+#contact-details-wrapper {
+	margin-top: 20px;
+	line-height: 180%;
+}
+
+
+
+/*#block-left {
+	background-color: lightblue;
+}
+
+#block-right {
+	background-color: lightpink;
+ 
+}*/
+
+
+.field {
+  	width:80%;
+	display: block;
+  	font-size:16px;
+  	margin-bottom:1em;
+  	padding:8px 0 8px 8px;
+  	cursor: pointer;
+  	font-family: 'Ubuntu', sans-serif;
+  	/*background:transparent;*/
+}
+
+
+input[type="submit"] {
+	width:50%;
+	height: 150%;
+  	font-size:50px;
+  	background:transparent;
+
+}
+
+#block-left {
+	padding-left: 25%;
+}
+
+#message {
+	height: 80px;
+}
+
+#submit {
+	text-align: center;
+}
+
+
+#submit:hover {
+	background-color: #6CB670;
+}
+
+
 /* ------ ///////  FOOTER ///////  -----------------*/
+
+footer {
+	clear: both;
+}
 
 #footer-wrapper {
 	width: 80%;
@@ -367,9 +588,9 @@ h2 {
 
 #footer-wrapper nav ul li a {
 	color: #F4F7F6;
-	font-family: 'Roboto', sans-serif;
-	line-height: 160%;
-	font-size: 110%;
+	font-family: 'Ubuntu', sans-serif;
+	line-height: 180%;
+	font-size: 100%;
 }
 
 #footer-three {
@@ -395,6 +616,17 @@ h2 {
 	padding-top: 10%;
 }
 
+
+.section-title h2 {
+	text-align: center;
+	display: block;
+	font-size: 210%;
+	/*color: #FFFFFF;*/
+	font-weight: 700;
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'Ubuntu', sans-serif;
+
+}
 
 
 
