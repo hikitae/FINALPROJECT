@@ -72,21 +72,10 @@ header {
 /*	width: 100%;*/
 }
 
- #gallery {
+ #gallery, #features, #about, #contact, footer {
  	height: 100%;
  }
 
-#features {
-	height: 100%;
-}
-
-#about, #contact {
-	height: 100%;
-}
-
-footer {
-	height: 250px;
-}
 
 
 
@@ -654,57 +643,42 @@ footer {
 
 #footer-wrapper {
 	width: 80%;
-	height: 100%;
 	margin: 0 auto;
-	padding-top: 3%;
+	padding-top: 40px;
+	padding-bottom:40px;
 }
 
 .footer-contents {
-	width: 30%;
-	height: 85%;
-	display: inline-block;
+	width: 100%;
 	overflow: hidden;
+	text-align: center;
+	padding-bottom: 10px;
 }
 
-#footer-one {
-	margin-right: 5%;
-	float: left;
+.footer-contents, #footer-wrapper nav ul li , #footer-contents img, .brand-icon {
+	display: inline-block;
 }
-
-#footer-two {
-	float: left;
-}
-
 #footer-wrapper nav ul li a {
 	color: #F4F7F6;
 	font-family: 'Ubuntu', sans-serif;
 	line-height: 180%;
 	font-size: 100%;
-}
-
-#footer-three {
-	float: right;
-	margin-right: 0;
-}
-
-.footer-contents img {
-	display: inline-block;
+	margin-right: 40px;
 }
 
 .brand-icon {
-	display: inline-block;
 	color: #F4F7F6;
-	padding-right: 5%;
+	margin-right: 20px;
 }
 
-#footer-three, #footer-one, #footer-two{
-	text-align: center;
-}
+#footer-four {
+	color: #848892;
+	font-size: 80%;
+	font-family: 'Ubuntu', sans-serif;
+	padding-top: 20px;
+	padding-bottom: 0;
 
-.brand-icon, #footer-one img {
-	padding-top: 10%;
 }
-
 
 
 
