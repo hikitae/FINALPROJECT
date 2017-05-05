@@ -1,18 +1,18 @@
 $(document).ready(function(){
-//   var interval = window.setInterval(rotateSlides, 5000)
-  
-//   function rotateSlides(){
-//     var $firstSlide = $("#mainimage").find(".slide-image:first");
-//     var width = $firstSlide.width();
-    
-//     $firstSlide.animate({marginLeft: -width}, 2000, function(){
-//       var $lastSlide = $("#mainimage").find(".slide-image:last")
-//       $lastSlide.after($firstSlide);
-//       $firstSlide.css({marginLeft: 0})
-//     });
-//   }
+	// var interval = window.setInterval(rotateSlides, 5000)
 
-// });
+	// function rotateSlides(){
+	// var $firstSlide = $("#mainimage").find(".slide-image:first");
+	// var width = $firstSlide.width();
+
+	// $firstSlide.animate({marginLeft: -width}, 2000, function(){
+	//   var $lastSlide = $("#mainimage").find(".slide-image:last")
+	//   $lastSlide.after($firstSlide);
+	//   $firstSlide.css({marginLeft: 0})
+	// });
+	// }
+
+
 
 	$('#left-arrow').click(previousSlide);
 	$('#right-arrow').click(nextSlide);
@@ -45,18 +45,15 @@ $(document).ready(function(){
 
 
 	// Get the modal
-	// var modal = document.getElementById('myModal');
 	var modal =$("#myModal");
 	// Get the button that opens the modal
-	// var btn = document.getElementById("VRvideo");
 	$("#btn-wrapper img").click(function(){
 		console.log("image clicked...");
 		modal.show();
-
 	})
 
 	// Get the <span> element that closes the modal
-	var span = document.getElementsByClassName("close")[0];
+	// var span = document.getElementsByClassName("close")[0];
 
 	// When the user clicks the button, open the modal 
 	// btn.onclick = function() {

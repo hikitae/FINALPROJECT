@@ -3,7 +3,7 @@
 <head>
 	<title>LookVR | Home </title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,500,700|Source+Sans+Pro:400,600,700|Montserrat:400,700|Ubuntu:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,500,700|Source+Sans+Pro:400,600,700|Montserrat:400,700|Ubuntu:400,500,700|Poppins:300,400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<script src="js/jquery-3.2.0.js"></script>
@@ -16,7 +16,7 @@
 
 <header class="backgroundcolor" id="top-page">
 	<div id="page-wrapper">
-		<a href="#top-page"><img src="images/lookvr.png" alt="LookVR Logo"></a>
+		<a href=""><img src="images/lookvr.png" alt="LookVR Logo"></a>
 		<nav>
 			<ul>
 				<li><a href="#about">About</a></li>
@@ -34,6 +34,7 @@
 <section id="mainimage">
 	<img src="images/arrow_left.svg" alt="Left Carousel Arrow" class="arrow" id="left-arrow">
     <img src="images/arrow_right.svg" alt="Right Carousel Arrow" class="arrow" id="right-arrow">
+    <!-- slides -->
   	<div class="slide-image" id="slide1">
   		<h1 class="slidetext1">REALTIME VIDEO STITCHING</h1>
   	</div>
@@ -48,7 +49,7 @@
 
 <!-- /////  ABOUT ////// -->
 
-<section id="about" class="backgroundcolor2">
+<section id="about" class="backgroundcolor-2">
 	<div class="row">
 		<div class="section-title">
 			<h2 class="color-green">ABOUT</h2>
@@ -56,15 +57,20 @@
 		</div>
 	</div>
 	<div id="about-wrapper">
-		<h4><p>LookVR is a a complete 2D &amp; 3D 360 capture/stitching/streaming software using state-of-the-art computational vision algorithms and GPU processing to deliver high frame rate and high resolution panoramic video. LookVR also features a modern UI designed with ease of use and on-set preview in mind which can deliver content to various platforms like Oculus CV-1,  HTC-Vive, YouTube 360, Facebook 360 and other CDNs. It also can stream and process multi channel audio for use for 3D spatial sound.</br>
-		Various camera rigs can be configured and calibrated on the fly in addition to pre-built rig templates for popular 360 rigs in various configurations like Blackmagic,  Nokia-OZO, Freedom-360 rigs.</p>
-		</h4>
+		<div class="about-block" id="about-left">
+			<h4><span>LookVR</span> is a a complete 2D &amp; 3D 360 capture/stitching/streaming software using state-of-the-art computational vision algorithms and GPU processing to deliver high frame rate and high resolution panoramic video. LookVR also features a modern UI designed with ease of use and on-set preview in mind which can deliver content to various platforms like Oculus CV-1,  HTC-Vive, YouTube 360, Facebook 360 and other CDNs. </h4>
+		</div>
+		<div class="about-block" id="about-right">
+			<h4>
+			It also can stream and process multi channel audio for use for 3D spatial sound.Various camera rigs can be configured and calibrated on the fly in addition to pre-built rig templates for popular 360 rigs in various configurations like Blackmagic,  Nokia-OZO, Freedom-360 rigs.</p>
+			</h4>
+		</div>
 	</div>
 </section>
 
 <!-- //////  FEATURES //////-->
 
-<section id="features" class="backgroundcolor3">
+<section id="features">
 	<div class="row">
 		<div class="section-title">
 			<h2>OUR  <span class="color-green">FEATURES</span></h2>
@@ -72,9 +78,9 @@
 		</div>
 	</div>
 
-	<div id="featureWrapper">
+	<div id="feature-wrapper">
 <!-- FEATURE ONE -->
-		<article class="featureContents" id="featureOne">
+		<article class="featureContents backgroundcolor-2" id="featureOne">
 			<div class="feature-block text-center">
 				<div class="feature-icon">
 					<i class="fa fa-film fa-4x"></i>
@@ -84,7 +90,7 @@
 			</div>
 		</article>
 <!-- FEATURE TWO -->
-		<article class="featureContents" id="featureTwo">
+		<article class="featureContents backgroundcolor-2" id="featureTwo">
 				<div class="feature-block text-center">
 					<div class="feature-icon text-center">
 						<i class="fa fa-forward fa-4x"></i>
@@ -94,7 +100,7 @@
 				</div>
 		</article>
 <!-- FEATURE THREE -->		
-		<article class="featureContents" id="featureThree">
+		<article class="featureContents backgroundcolor-2" id="featureThree">
 				<div class="feature-block text-center">
 					<div class="feature-icon text-center">
 						<i class="fa fa-eye fa-4x"></i>
@@ -105,12 +111,13 @@
 					<h4>Comfortable User Experience</h4>
 				</div>
 		</article>
+	
 	</div>
 </section>
 
 <!-- //////  GALLERY //////-->
 
-<section id="gallery" class="backgroundcolor4">
+<section id="gallery" class="backgroundcolor-3">
 	<div class="row">
 		<div class="section-title">
 			<h2 class="color-green">GALLERY</h2>
@@ -131,13 +138,11 @@
 
 		<!-- The Modal -->
 		<div id="myModal" class="modal">
-
 		  <!-- Modal content -->
 		  	<div class="modal-content">
-		    	<span class="close">&times;</span>s
+		    	<span class="close"> &times;</span>
                     <iframe id="VRvideo" src="https://www.youtube.com/embed/pJDcwXQc5CU" frameborder="0" allowfullscreen></iframe>
             </div>
-
 		</div>
 			
 		</div>
@@ -172,7 +177,7 @@
 
 <!-- //////  CONTACT //////-->
 
-<section id="contact" class="backgroundcolor3">
+<section id="contact">
 	<div class="row">
 		<div class="section-title">
 			<h2>GET IN <span class="color-green">TOUCH</span></h2>
@@ -184,10 +189,20 @@
 		<div class="contact-block" id="block-left">
 			<h3>Contact Details</h3>
 			<h4>Please mail us for more details</h4>
+
 			<div id="contact-details-wrapper">
-			<h4 class="contact-details">Los Angeles, United States</h4>
-			<h4 class="contact-details">+800-695-4560</h4>
-			<h4 class="contact-details">info@lookvr.io</h4>
+				<div class="contact-details">
+					<i class="fa fa-home fa-1x"></i>
+					<h4>Los Angeles, United States</h4>
+				</div>
+				<div class="contact-details">
+					<i class="fa fa-phone fa-1x"></i>
+					<h4 class="contact-details">+800-695-4560</h4>
+				</div>
+				<div class="contact-details">
+					<i class="fa fa-envelope fa-1x"></i>
+					<h4 class="contact-details">info@lookvr.io</h4>
+				</div>
 			</div>
 		</div>
 		
@@ -196,12 +211,20 @@
 				<input class= "field" id="yourName" name="yourName" type="text" placeholder="Your Name">
 				<input class= "field" id="yourEmail" name="yourEmail" type="email" placeholder="Your Email">
 				<input class= "field" id="subject" name="subject" type="text" placeholder="Subject">
-				<!-- <input class= "field" id="message" name="message" type="textarea" placeholder="Message"> -->
 				<textarea class="field" name="message" id="message" placeholder="Message"></textarea>
-				<!-- <input type="submit" placeholder="Submit">	 -->
-				<!-- <input type="submit" id="submit" name="submit" class="field" placeholder="Submit">  -->
+			
+			<!-- I am not using "password" for my Finalproject -->
+				<input class="field" type="password" name="psw" placeholder="Password">
+
+			<!-- I am not using "radio" for my Finalproject -->
+				<div class="radio field">
+				    <input id="male" type="radio" name="gender" value="male">
+				    <label for="male">Male</label>
+				    <input id="female" type="radio" name="gender" value="female">
+				    <label for="female">Female</label>
+				</div>
+
 				<button class="field" type="submit">Submit</button>
-				<input type="submit" value="text">
 			</form>
 		</div>
 	</div>
