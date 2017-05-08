@@ -86,7 +86,7 @@ header {
 /* ---------  /////  HEADER ///// ---------------*/
 
 header {
-   /* position: fixed;*/
+    position: fixed;
     top: 0px;
     width: 100%;
     z-index: 10;
@@ -134,62 +134,94 @@ header img {
 
 /* --------  /////   MAIN IMAGE /////------------------*/
 
+#slide1 {
+  	background-image: url('../images/slide_1.jpg');
+	animation:fade 10s infinite;
+}
+/*.slidetext1{
+	animation:fade 10s infinite;
+}*/
+
+#slide2 {
+	background-image: url('../images/slide_2.png');
+	animation:fade2 10s infinite;
+}
+
+#slide3 {
+	background-image: url('../images/slide_3.png');
+    animation:fade3 10s infinite;
+}
+
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0}
+  100% { opacity: 0}
+
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+  
+}
 
 #mainimage {
-	/*position: relative;*/
-	/*white-space: nowrap;*/
+	position: relative;
+	white-space: nowrap;
 	overflow: hidden;
 }
 
-#mainimage > * {
-	display: none;
-}
-
-.slideshow , .slideshow img {
-  height: 800px;
-  width: 100%;
-  position: relative;
-}
-
-.object-fit_cover { 
-  object-fit: cover ;
+.slide-image {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+	position: absolute;
 }
 
 .slidetext1 {
-	position:absolute;
-	top: 70%;
-	left: 45%;
-	transform: translateX(-45%);
-	display: inline-block;
 	font-family: 'Roboto', sans-serif;
-	font-size: 420%;
+	font-size: 450%;
 	font-weight: 700;
-	color: #FFFFFF;	
+	color: #FFFFFF;
+	position: relative;
+	top: 70%;
 }
 
 .slidetext2 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 350%;
+	font-size: 360%;
 	font-weight: 700;
-	line-height: 130%;
+	line-height: 120%;
 	color: #FFFFFF;
-	display: inline-block;
-	position: absolute;
-	top: 70%;
-	left: 45%;
-	letter-spacing: 140%;
+	position: relative;
+	top: 65%;
+	left: 15%;
 }
 
 .slidetext3 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 340%;
+	font-size: 300%;
 	font-weight: 700;
 	color: #FFFFFF;
-	position: absolute;
-	top: 80%;
-	left: 50%;
-	transform: translateX(-50%);
+	position: relative;
+	top: 72%;
 }
+
 
 /* --------  /////   MAIN IMAGE - ARROWs /////------------------*/
 .arrow {
@@ -287,6 +319,7 @@ h2 {
 }
 
 #about-wrapper h4 {
+	/*height: 100%;*/
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	line-height: 30px;
@@ -319,6 +352,9 @@ h2 {
 #features {
 	clear: both;
 	position: relative;
+	/*background-image: url('../images/bgImg_1.jpg');
+	background-position: center;
+	background-size: cover;*/
 	overflow: hidden;
 	padding-top: 40px;
 }
@@ -334,10 +370,14 @@ h2 {
 	background-size: cover;
     width: 100%;
     height: 100%;
-    opacity : 0.6;
+    opacity : 0.7;
     z-index: -1;
 }
-
+/*.feature-content {
+	position: relative;
+	z-index: 2;
+}
+*/
 #feature-wrapper {
 	width: 80%;
 	margin: 0 auto;
@@ -408,7 +448,7 @@ h2 {
 #gallery {
 	padding-top: 40px;
 	clear: both;
-	background-color: #4f575b
+	/*background-color: #4d4d5e;*/
 
 }
 #gallerygreen {
@@ -416,7 +456,7 @@ h2 {
 }
 
 
-.gallery-wrapper {
+#gallery-wrapper {
 	width: 80%;
 	margin:0 auto;
 /*	height: 100%;*/
@@ -437,18 +477,16 @@ h2 {
 }
 
 #gallery-text h3 {
-	/*color:#5a5a5a;*/
-	color: #F4F7F6;
+	color:#5a5a5a;
 	font-weight: 500;
 	font-size: 160%;
 	font-family: 'Ubuntu', sans-serif;
 }
 
 #gallery-text h4 {
-/*	color:#5a5a5a;*/
-	color: #F4F7F6;
+	color:#5a5a5a;
 	font-weight: 300;
-	font-size: 110%;
+	font-size: 115%;
 	font-family: 'Poppins', sans-serif;
 	line-height: 140%;
 }
@@ -462,41 +500,28 @@ h2 {
 #gallery-text h3, h4 {
 	margin-bottom: 10px;
 }
-
-
-.btn-wrapper {
-	width: 75%;
-/*	margin: 0 auto;*/
+/*#gallery-image {
+	background-color: lightblue;
 }
 
-.btn-wrapper img {
-	width: 100%;
-}
+#gallery-text {
+	background-color: lightpink;
+}*/
 
-#btn-wrapper-vegas {
-	float: right;
-}
+/*<!-- ///////
+		//////////////MODAL -->*/
 
-#gallery-one {
-	width: 100%;
-}
 
-#gallery-two {
-	width: 100%;
-	padding-top: 60px;
+#btn-wrapper img {
+	width: 80%;
 }
-
-#gallery-one {
-	border-bottom: 1px solid #3c3c3c;
-	 width: 80%;
-}
-
 
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
+    /*padding-top: 100px;*/ /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;  /*Full width */
@@ -508,16 +533,17 @@ h2 {
 
 /* Modal Content */
 .modal-content {
-    background-color: transparent;
+    background-color: black;
     margin: auto;
     padding: 5px;
+  /*  border: 5px solid #888;*/
     width: 50%;
     height: 50%;
     position: fixed;
     top: 50%;
     transform: translate(-50%, -50%);
     left:50%;
-
+    /*transform: translateX(-50%);*/
 
 }
 
@@ -528,7 +554,7 @@ iframe {
 
 /* The Close Button */
 .close {
-    color: #4e4f4f ;
+    color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -536,7 +562,7 @@ iframe {
 
 .close:hover,
 .close:focus {
-    color: white;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
 }
@@ -548,6 +574,7 @@ iframe {
 /* ------ //////  CONTACT  //////  ----------------*/
 
 #contact {
+	/*background-color: #E0E0E0;*/
 	font-family: 'Ubuntu', sans-serif;
 	overflow: hidden;
 	clear: both;
@@ -556,6 +583,7 @@ iframe {
 
 #contact-wrapper {
 	width: 70%;
+	/*height: 100%;*/
 	margin: 0 auto;
 	overflow: hidden;
 }

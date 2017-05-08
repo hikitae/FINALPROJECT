@@ -6,9 +6,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,500,700|Source+Sans+Pro:400,600,700|Montserrat:400,700|Ubuntu:400,500,700|Poppins:300,400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+
 	<script src="js/jquery-3.2.0.js"></script>
-	<script src="jquery.vimeo.api.min.js"></script>
+	<!-- <script src="jquery.vimeo.api.min.js"></script> -->
+	
 	<script src="js/script.js"></script>
+
 </head>
 
 <body>
@@ -20,37 +23,41 @@
 		<a href=""><img src="images/lookvr.png" alt="LookVR Logo"></a>
 		<nav>
 			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#features">Features</a></li>
-				<li><a href="#gallery">Gallery</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#about" class="nav">About</a></li>
+				<li><a href="#features" class="nav">Features</a></li>
+				<li><a href="#gallery" class="nav">Gallery</a></li>
+				<li><a href="#" class="nav">Blog </a></li>
+				<li><a href="#contact" class="nav">Contact</a></li>
 			</ul>  
 		</nav>
 	</div>
 </header>
 
-<!-- //////  Main Image  ///// -->
 
 <section id="mainimage">
-	<img src="images/arrow_left.svg" alt="Left Carousel Arrow" class="arrow" id="left-arrow">
-    <img src="images/arrow_right.svg" alt="Right Carousel Arrow" class="arrow" id="right-arrow">
-    <!-- slides -->
-  	<div class="slide-image" id="slide1">
-  		<h1 class="slidetext1">REALTIME VIDEO STITCHING</h1>
-  	</div>
-    <div class="slide-image" id="slide2">
-    	<h1 class="slidetext2">YouTube 360 &amp; Facebook 360 </br>STREAMING SUPPORT</h1>
-    </div>
-    <div class="slide-image" id="slide3">
-    	<h1 class="slidetext1">HIGH FRAME RATES</h1>
-    	<h3 class="slidetext3">High Resolution</h3>
-    </div>
+	<div class="slideshow">
+		<img  class="object-fit-cover" id="slide-1" src="images/slide_1.jpg">
+		<h1 class="slidetext1 slidetext">REALTIME VIDEO STITCHING</h1>
+	</div>
+	<div class="slideshow">
+		<img class="object-fit-cover" id="slide-2" src="images/slide_2.png">
+		<h1 class="slidetext2 slidetext">YouTube 360 &amp; Facebook 360 </br>STREAMING SUPPORT</h1>
+	</div>
+	<div class="slideshow">
+		<img class="object-fit-cover" id="slide-3" src="images/slide_3.png">
+		<h1 class="slidetext1 slidetext">HIGH FRAME RATES</h1>
+	    <h3 class="slidetext3 slidetext">High Resolution</h3>
+	</div>
+
+<!--  ARROWS -->
+<!-- 	<img src="images/arrow_left.svg" alt="Left Carousel Arrow" class="arrow" id="left-arrow">
+    <img src="images/arrow_right.svg" alt="Right Carousel Arrow" class="arrow" id="right-arrow"> -->
+ 
 </section>
 
 <!-- /////  ABOUT ////// -->
 
-<section id="about" class="backgroundcolor-2">
+<section id="about" class="backgroundcolor-2 section">
 	<div class="row">
 		<div class="section-title">
 			<h2 class="color-green">ABOUT</h2>
@@ -71,7 +78,7 @@
 
 <!-- //////  FEATURES //////-->
 
-<section id="features">
+<section id="features" class="section">
 	<div class="row">
 		<div class="section-title">
 			<h2>OUR  <span class="color-green">FEATURES</span></h2>
@@ -118,70 +125,102 @@
 
 <!-- //////  GALLERY //////-->
 
-<section id="gallery" class="backgroundcolor-3">
-	<div class="row">
-		<div class="section-title">
-			<h2 class="color-green">GALLERY</h2>
-				<div class="border"></div>
+<section id="gallery" class="backgroundcolor-2 section">
+		<div class="row">
+			<div class="section-title">
+				<h2 class="color-green">GALLERY</h2>
+					<div class="border"></div>
+			</div>
 		</div>
-	</div>
 
-	<div id="gallery-wrapper">
-		<div class="gallery-block" id="gallery-image">
+		<!-- /// Gallery One -->
+		<div class="gallery-wrapper" id="gallery-one">
+			<div class="gallery-block" id="gallery-image">
+			<!-- Trigger/Open The Modal -->
+				<div class="btn-wrapper" id="btn-wrapper-ocean">
+					<a href="#modalOcean">
+						<img src="images/Gallery_ocean.png">
+					</a>
+				</div>
+				<!-- The Modal -->
+				<div id="modalOcean" class="modal">
+				  <!-- Modal content -->
+				  	<div class="modal-content">
+				    	<span class="close" id="closeOcean"> &times;</span>   
+							<iframe id="vimeoOcean" src="" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+					</div>
+				</div>
+			</div>
+			
+			<div class="gallery-block" id="gallery-text">
+				<h3>Main Features of LookVR</h3>
+				<h4>Support for various Blending Algorthms in realtime</h4>
+				<h4>
+				<ul>
+					<li>Multiband</li>
+					<li>Featuring</li>
+				</ul>
+				</h4>
+				<h4>Calibration Support - Inbuilt Calibration</h4>
+				<h4>Calibration Support of ptGUI templates</h4>
+				<h4>Camera calibration Adjustments in real time (Exposure/Gain/Various Blend Parameters)</h4>
+				<h4>Blend Maps</h4>
+				<h4>Banner Advertisements</h4>
+			</div>
+
+			<!-- <div class="border-line"></div> -->
+		</div>
+		
 	
+
+	<!-- /// Gallery Two -->
+	<div id="gallery-two">
+	<div class="gallery-wrapper">
+		<div class="gallery-block" id="gallery-text">
+			<h3>Main Features of LookVR</h3>
+			<h4>Support for various Blending Algorthms in realtime</h4>
+			<h4>
+			<ul>
+				<li>Multiband</li>
+				<li>Featuring</li>
+			</ul>
+			</h4>
+			<h4>Calibration Support - Inbuilt Calibration</h4>
+			<h4>Calibration Support of ptGUI templates</h4>
+			<h4>Camera calibration Adjustments in real time (Exposure/Gain/Various Blend Parameters)</h4>
+			<h4>Blend Maps</h4>
+			<h4>Banner Advertisements</h4>
+		</div>
+
+
+		<div class="gallery-block" id="gallery-image">
 		<!-- Trigger/Open The Modal -->
-		<div id="btn-wrapper">
-			<a href="#myModal">
-				<img src="images/Gallery_vegas_withArrow.png">
+		<div class="btn-wrapper" id="btn-wrapper-vegas">
+			<a href="#modalVegas">
+				<img src="images/Gallery_vegas_3.png">
 			</a>
 		</div>
-
 		<!-- The Modal -->
-		<div id="myModal" class="modal">
+		<div id="modalVegas" class="modal">
 		  <!-- Modal content -->
 		  	<div class="modal-content">
-		    	<span class="close"> &times;</span>
-                 <!--    <iframe id="VRvideo" src="https://www.youtube.com/embed/pJDcwXQc5CU" frameborder="0" allowfullscreen></iframe> -->
-					<iframe id="VRvideo" src="https://vimeo.com/216101771" frameborder="0" allowfullscreen></iframe>           
+		    	<span class="close" id="closeVegas"> &times;</span>
+                   <iframe id="vimeoVegas" src="" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
             </div>
 		</div>
 			
 		</div>
-		
-		<div class="gallery-block" id="gallery-text">
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-			<p>test</p>
-		</div>
+	</div>
 	</div>
 
 </section>
 
 <!-- //////  CONTACT //////-->
 
-<section id="contact">
+<section id="contact" class="backgroundcolor-2 section">
 	<div class="row">
 		<div class="section-title">
-			<h2>GET IN <span class="color-green">TOUCH</span></h2>
+			<h2><span class="color-green">CONTACT</span></h2>
 				<div class="border"></div>
 		</div>
 	</div>
@@ -243,11 +282,11 @@
 		<article class="footer-contents" id="footer-two">
 			<nav>
 				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#features">Features</a></li>
-					<li><a href="#gallery">Gallery</a></li>
-					<li><a href="#">Support</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about" class="nav">About</a></li>
+					<li><a href="#features" class="nav">Features</a></li>
+					<li><a href="#gallery" class="nav">Gallery</a></li>
+					<li><a href="#" class="nav">Blog</a></li>
+					<li><a href="#contact" class="nav">Contact</a></li>
 				</ul>  
 			</nav>
 		</article>
