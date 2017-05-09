@@ -18,24 +18,43 @@ $(document).ready(function(){
 // ---- SLIDESHOW  FADE IN / OUT -----//
 
   var slideInterval = 5000,
-    fadeDuration = 600,
-    $slideshow = $('#mainimage'),
-    $slides = $slideshow.children();
+    fadeDuration = 400,
+    $slideshow = $('#mainimage');
+    // $slides = $slideshow.children();
+  // console.log("SLIDES", $slides);
+  // $slides.eq(0).fadeIn(fadeDuration);
   
-  $slides.eq(0).fadeIn(fadeDuration);
+
+
+  $("#right-arrow").click(rotateSlideForward);
+    $("#left-arrow").click(rotateSlideBackward);
+
   
-  setInterval(function() {
-    $slides = $slideshow.children();
+  function rotateSlideForward(){
+  	$slides = $slideshow.children("div");
+  	console.log($slideshow.children("div"));
     $slides.eq(0).fadeOut(fadeDuration, function() {
       $(this).appendTo($slideshow);
     });
     $slides.eq(1).fadeIn(fadeDuration);
-  }, slideInterval);
+  	}
+  	
+  	 function rotateSlideBackward(){
+  	$slides = $slideshow.children("div");
+  	console.log($slideshow.children("div"));
+    $slides.eq(-1).fadeOut(fadeDuration, function() {
+      $(this).prependTo($slideshow);
+    });
+
+    $slides.eq(-1).fadeIn(fadeDuration);
+  	
+  	}
+
   
 
 
 // ---- SLIDE FADE IN / OUT with ARROWS -----//
-///////////////
+
 
 
 // ---- SLIDE SHOW ARROWS-----//
@@ -47,8 +66,8 @@ $(document).ready(function(){
 
 	// function nextSlide(){
 	//   window.clearInterval(interval);
-	//   var $currentSlide = $('#mainimage').find('.slide-image:first');
-	//   var width = $currentSlide.width();
+	//   var $currentSlide = $('#mainimage').find('.slideshow:first');
+	//   var height = $currentSlide.height();
 	//   $currentSlide.animate({marginLeft: -width}, 1000, function(){
 	//     var $lastSlide = $('#mainimage').find('.slide-image:last')
 	//     $lastSlide.after($currentSlide);
