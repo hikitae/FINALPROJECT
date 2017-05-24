@@ -6,16 +6,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,500,700|Source+Sans+Pro:400,600,700|Montserrat:400,700|Ubuntu:400,500,700|Poppins:300,400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-
 	<script src="js/jquery-3.2.0.js"></script>
-	<!-- <script src="jquery.vimeo.api.min.js"></script> -->
-	
 	<script src="js/script.js"></script>
-
 </head>
 
 <body>
 <div id="container">
+
 <!-- /////  HEADER  //////  -->
 
 <header class="backgroundcolor" id="top-page">
@@ -23,6 +20,11 @@
 		<a href=""><img src="images/lookvr.png" alt="LookVR Logo"></a>
 		<nav>
 			<ul>
+				<li>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</li>
 				<li><a href="#about" class="nav">About</a></li>
 				<li><a href="#features" class="nav">Features</a></li>
 				<li><a href="#gallery" class="nav">Gallery</a></li>
@@ -32,7 +34,6 @@
 		</nav>
 	</div>
 </header>
-
 
 <!-- /////  MAIN IMAGE  //////  -->
 
@@ -47,8 +48,8 @@
 	</div>
 	<div class="slideshow">
 		<img class="object-fit-cover" id="slide-3" src="images/paris.jpg">
-		<h1 class="slidetext1 slidetext">HIGH FRAME RATES</h1>
-	    <h3 class="slidetext3 slidetext">High Resolution</h3>
+		<h1 class="slidetext3 slidetext">HIGH FRAME RATES</h1>
+	    <h3 class="slidetext4 slidetext">High Resolution</h3>
 	</div>
 
 <!--  ARROWS -->
@@ -121,64 +122,39 @@
 					<h4>Flat Theme</h4>
 					<h4>Comfortable User Experience</h4>
 				</div>
-		</article>
-	
+		</article>	
 	</div>
 </section>
 
 <!-- //////  GALLERY //////-->
 
-<section id="gallery" class="backgroundcolor-2 section">
-		<div class="row">
-			<div class="section-title">
-				<h2 class="color-green">GALLERY</h2>
-					<div class="border"></div>
-			</div>
+<section id="gallery" class="backgroundcolor-3 section">
+	<div class="row">
+		<div class="section-title">
+			<h2 class="color-green">GALLERY</h2>
+				<div class="border"></div>
 		</div>
+	</div>
 
 		<!-- /// Gallery One -->
-		<div class="gallery-wrapper" id="gallery-one">
-			<div class="gallery-block" id="gallery-image">
-			<!-- Trigger/Open The Modal -->
-				<div class="btn-wrapper" id="btn-wrapper-ocean">
-					<a href="#modalOcean">
-						<img src="images/Gallery_ocean.png">
-					</a>
-				</div>
-				<!-- The Modal -->
-				<div id="modalOcean" class="modal">
-				  <!-- Modal content -->
-				  	<div class="modal-content">
-				    	<span class="close" id="closeOcean"> &times;</span>   
-							<iframe id="vimeoOcean" src="" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-					</div>
+	<div class="gallery-wrapper" id="gallery-one">
+		<div class="gallery-block" id="gallery-image">
+		<!-- Trigger/Open The Modal -->
+			<div class="btn-wrapper" id="btn-wrapper-ocean">
+				<a href="#modalOcean">
+					<img src="images/Gallery_ocean.png">
+				</a>
+			</div>
+			<!-- The Modal -->
+			<div id="modalOcean" class="modal">
+			  <!-- Modal content -->
+			  	<div class="modal-content">
+			    	<span class="close" id="closeOcean"> &times;</span>   
+						<iframe id="vimeoOcean" src="" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
 				</div>
 			</div>
-			
-			<div class="gallery-block" id="gallery-text">
-				<h3>Main Features of LookVR</h3>
-				<h4>Support for various Blending Algorthms in realtime</h4>
-				<h4>
-				<ul>
-					<li>Multiband</li>
-					<li>Featuring</li>
-				</ul>
-				</h4>
-				<h4>Calibration Support - Inbuilt Calibration</h4>
-				<h4>Calibration Support of ptGUI templates</h4>
-				<h4>Camera calibration Adjustments in real time (Exposure/Gain/Various Blend Parameters)</h4>
-				<h4>Blend Maps</h4>
-				<h4>Banner Advertisements</h4>
-			</div>
-
-			<!-- <div class="border-line"></div> -->
 		</div>
 		
-	
-
-	<!-- /// Gallery Two -->
-	<div id="gallery-two">
-	<div class="gallery-wrapper">
 		<div class="gallery-block" id="gallery-text">
 			<h3>Main Features of LookVR</h3>
 			<h4>Support for various Blending Algorthms in realtime</h4>
@@ -193,27 +169,49 @@
 			<h4>Camera calibration Adjustments in real time (Exposure/Gain/Various Blend Parameters)</h4>
 			<h4>Blend Maps</h4>
 			<h4>Banner Advertisements</h4>
-		</div>
-
-
-		<div class="gallery-block" id="gallery-image">
-		<!-- Trigger/Open The Modal -->
-		<div class="btn-wrapper" id="btn-wrapper-vegas">
-			<a href="#modalVegas">
-				<img src="images/Gallery_vegas_3.png">
-			</a>
-		</div>
-		<!-- The Modal -->
-		<div id="modalVegas" class="modal">
-		  <!-- Modal content -->
-		  	<div class="modal-content">
-		    	<span class="close" id="closeVegas"> &times;</span>
-                   <iframe id="vimeoVegas" src="" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-            </div>
-		</div>
-			
+			<a href="">Read More</a>
 		</div>
 	</div>
+
+	<!-- /// Gallery Two -->
+	<div id="gallery-two">
+		<div class="gallery-wrapper">
+			<div class="gallery-block" id="gallery-text">
+				<h3>Main Features of LookVR</h3>
+				<h4>Real time Live stitching 2D/3D-360</h4>
+				<h4>
+				<ul>
+					<li>Post Production File Formats/Codecs Supported</li>
+					<li>Movie files - QT, AVI</li>
+					<li>File sequence (png, jpg, dpx etc)</li>
+				</ul>
+				</h4>
+				<h4>Standard 360 Rigs Supported and easy to add additional camera rigs</h4>
+				<h4>Support for Multiple Rig Configurations</h4>
+				<h4>Currently in use in production as Directors preview in 3D-360 VR productions</h4>
+				<h4>YouTube360/Facebook360 Suppor</h4>
+				<h4>Currently in use for live streaming of sporting events/concerts</h4>
+				<a href="">Read More</a>
+			</div>
+
+
+			<div class="gallery-block" id="gallery-image">
+				<!-- Trigger/Open The Modal -->
+				<div class="btn-wrapper" id="btn-wrapper-vegas">
+					<a href="#modalVegas">
+						<img src="images/Gallery_vegas_3.png">
+					</a>
+				</div>
+				<!-- The Modal -->
+				<div id="modalVegas" class="modal">
+				  <!-- Modal content -->
+				  	<div class="modal-content">
+				    	<span class="close" id="closeVegas"> &times;</span>
+		                   <iframe id="vimeoVegas" src="" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+		            </div>
+				</div>	
+			</div>
+		</div>
 	</div>
 
 </section>
@@ -224,7 +222,7 @@
 	<div class="row">
 		<div class="section-title">
 			<h2><span class="color-green">CONTACT</span></h2>
-				<div class="border"></div>
+			<div class="border"></div>
 		</div>
 	</div>
 
@@ -255,7 +253,6 @@
 				<input class= "field" id="yourEmail" name="yourEmail" type="email" placeholder="Your Email">
 				<input class= "field" id="subject" name="subject" type="text" placeholder="Subject">
 				<textarea class="field" name="message" id="message" placeholder="Message"></textarea>
-
 				<button class="field" type="submit">Submit</button>
 			</form>
 		</div>
@@ -298,15 +295,9 @@
 		<article class="footer-contents" id="footer-four">
 			<h4>Design And Developed by LookVR Team. Copyright© 2017. All Rights Reserved.</h4>
 		</article>
-
-		
 	</div>
 </footer>
 
 </div>
 
 </body>
-
-
-
-
